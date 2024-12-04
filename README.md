@@ -13,9 +13,9 @@
 ## Tech Stack  
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB (Mongoose ORM)  
-- **Frontend:** [Include if applicable, e.g., React.js]  
-- **Testing:** [Include if applicable, e.g., Mocha, Chai]  
-- **Deployment:** [Include if applicable, e.g., AWS, Heroku]  
+- **Frontend:** React.js
+- **Testing:** Postman, Chrome
+- **Deployment:** AWS EC2 
 
 ## Prerequisites  
 - Node.js (v14 or later)  
