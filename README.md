@@ -22,4 +22,7 @@
 - MongoDB (local or Atlas)  
 - npm or yarn  
 
----
+## Architecture
+
+![ArchitectureDiagram](https://github.com/user-attachments/assets/388a1c61-7d9c-425c-bd23-07e830f580dc)
+
