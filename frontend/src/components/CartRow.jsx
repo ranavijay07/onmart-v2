@@ -6,7 +6,7 @@ function CartRow({ cartItem, dispatch, items }) {
   const item = items.find((i) => i._id === cartItem.itemId);
 
   const removeItemFromCart = () => {
-    dispatch({ type: CartTypes.REMOVE, itemId: item.id });
+    dispatch({ type: CartTypes.REMOVE, itemId: item._id });
   };
 
   console.log(cartItem, dispatch, items);

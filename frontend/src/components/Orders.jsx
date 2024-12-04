@@ -15,7 +15,7 @@ function Orders({ items }) {
     () => {
       console.log('hehe');
       // if (currentUser.access === 'associate') {
-      fetch('http://localhost:3001/orders/'+customerId)
+      fetch('http://3.144.103.79/api/orders/'+customerId)
         .then(res => res.json())
         .then(data => {
           // // const filteredOrders = data.filter(order => order.customerId[0]._id === customerId); 
@@ -29,7 +29,7 @@ function Orders({ items }) {
   );
 
   const deleteOrder = (order) => {
-    fetch('http://localhost:3001/orders/'+order._id,{
+    fetch('http://3.144.103.79/api/orders/'+order._id,{
       method: 'DELETE',
       headers: { "Content-Type": "application/json"}
     })
