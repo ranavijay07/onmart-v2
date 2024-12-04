@@ -1,5 +1,4 @@
-# Preparing the README content for the frontend in plain markdown text
-frontend_readme_content = """
+
 # OnMart Frontend  
 
 ## Overview  
@@ -44,3 +43,60 @@ src/
 ├── App.js            # Root component  
 ├── index.js          # Entry point  
 ├── setupProxy.js     # Proxy for API requests  
+```  
+
+---
+
+## Prerequisites  
+- Node.js (v14 or later)  
+- npm  
+
+---
+
+## Installation  
+
+### Clone the Repository  
+```bash  
+git clone https://github.com/username/OnMart.git  
+cd OnMart/frontend  
+```  
+
+### Install Dependencies  
+Run the following command to install all required Node.js packages:  
+```bash  
+npm install  
+```  
+
+### Start the Development Server  
+To start the development server, use:  
+```bash  
+npm start  
+```  
+This will launch the application at `http://localhost:3000/`.  
+
+---
+
+## Available Scripts  
+In the project directory, you can run the following scripts:  
+
+### `npm start`  
+Runs the app in development mode.  
+
+### `npm test`  
+Launches the test runner.  
+
+### `npm run build`  
+Builds the app for production to the `build` folder.  
+
+### `npm run eject`  
+Ejects the app configuration (irreversible).  
+
+---
+
+## Proxy Setup  
+The `setupProxy.js` file in the `src` folder configures a proxy for API requests to the backend. Ensure the backend server is running before testing API endpoints.  
+
+---
+
+## License  
+This project is licensed under the MIT License.
