@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OnMart Frontend  
 
-## Available Scripts
+## Overview  
+The **OnMart Frontend** is a React.js-based single-page application (SPA) for the OnMart e-commerce platform. It provides customer-facing pages for browsing products, managing orders, and handling user authentication.  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features  
+- **Homepage:** Displays featured products and categories.  
+- **Product Browsing:** Filter products by category and view product details.  
+- **User Authentication:** Sign-in and sign-up functionality.  
+- **Cart Management:** Add, remove, and update products in the cart.  
+- **Order Management:** View and manage placed orders.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack  
+- **Frontend Framework:** React.js  
+- **Styling:** CSS  
+- **State Management:** Context API with Reducers  
+- **Routing:** React Router Dom  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Folder Structure  
+```plaintext  
+src/  
+├── components/       # Reusable React components  
+├── contexts/         # Context API for state management  
+├── images/           # Static images  
+├── items/            # Sample data or static assets  
+├── pages/            # Main pages for the application  
+│   ├── CartPage.jsx  
+│   ├── CategoryPage.jsx  
+│   ├── Homepage.jsx  
+│   ├── OrdersPage.jsx  
+│   ├── ProductDetailPage.jsx  
+│   ├── SignInPage.jsx  
+│   └── SignUpPage.jsx  
+├── reducers/         # Reducers for state updates  
+├── types/            # Action types for reducers  
+├── App.js            # Root component  
+├── index.js          # Entry point  
+├── setupProxy.js     # Proxy for API requests  
+```  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites  
+- Node.js (v14 or later)  
+- npm  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation  
 
-### `npm run eject`
+### Clone the Repository  
+```bash  
+git clone https://github.com/username/OnMart.git  
+cd OnMart/frontend  
+```  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Install Dependencies  
+Run the following command to install all required Node.js packages:  
+```bash  
+npm install  
+```  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Start the Development Server  
+To start the development server, use:  
+```bash  
+npm start  
+```  
+This will launch the application at `http://localhost:3000/`.  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Available Scripts  
+In the project directory, you can run the following scripts:  
 
-## Learn More
+### `npm start`  
+Runs the app in development mode.  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `npm test`  
+Launches the test runner.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `npm run build`  
+Builds the app for production to the `build` folder.  
 
-### Code Splitting
+### `npm run eject`  
+Ejects the app configuration (irreversible).  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Proxy Setup  
+The `setupProxy.js` file in the `src` folder configures a proxy for API requests to the backend. Ensure the backend server is running before testing API endpoints.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License  
+This project is licensed under the MIT License.
