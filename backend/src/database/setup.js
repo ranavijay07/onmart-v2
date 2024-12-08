@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
-const uri = 'mongodb://localhost:27017/ecommerceDB';
+const uri = 'mongodb://localhost:8000/ecommerceDB';
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Schema Definitions

@@ -19,7 +19,7 @@ function Login() {
 
       // Make API call to authenticate the user
     try {
-      const response = await fetch('http://3.144.103.79/api/customers/signin', {  // Update with your API endpoint
+      const response = await fetch('http://localhost:5000/customers/signin', {  // Update with your API endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -17,7 +17,7 @@ function App() {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
-    fetch('http://3.144.103.79/api/products')
+    fetch('http://localhost:5000/products')
       .then(res => res.json())
       .then(data => setItems(data))
       .catch(error => console.error('Error fetching products:', error));
