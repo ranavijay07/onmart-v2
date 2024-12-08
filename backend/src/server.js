@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: '*' }));
 
-const uri = 'mongodb://mongo:27017/ecommerceDB';
+const uri = 'mongodb://localhost:27017/ecommerceDB';
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use('/products', productRoutes);
