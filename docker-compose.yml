@@ -9,6 +9,14 @@ services:
       - backend
     environment:
       - REACT_APP_BACKEND_URL=http://backend:5000
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: '0.25'
+        reservations:
+          memory: 128M
+          cpus: '0.1'
 
   backend:
     build:
@@ -18,7 +26,15 @@ services:
     depends_on:
       - mongo
     environment:
-      - MONGO_URL=mongodb://mongo:27017/ecommerceDB;
+      - MONGO_URL=mongodb://mongo:27017/ecommerceDB
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: '0.25'
+        reservations:
+          memory: 128M
+          cpus: '0.1'
 
   mongo:
     image: mongo:5.0
@@ -27,6 +43,14 @@ services:
       - "8000:27017"
     volumes:
       - mongo-data:/data/db
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.5'
+        reservations:
+          memory: 256M
+          cpus: '0.25'
 
 volumes:
   mongo-data:
