@@ -50,7 +50,7 @@ function Cart({ cart, dispatch, items }) {
           phone,
           zipCode,
       };
-      fetch('http://localhost:5000/orders',{
+      fetch('http://localhost/api/orders',{
         method: 'POST',
         headers: { "Content-Type": "application/json"},
         body: JSON.stringify(newOrder)
