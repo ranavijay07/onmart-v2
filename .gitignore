@@ -111,3 +111,6 @@ public
 .tmp/
 .temp/
 *.pem
+
+# Build folder is no longer ignored
+!build/
