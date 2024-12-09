@@ -33,7 +33,7 @@ function SignUp() {
       // Hash the password before sending to the server
       const passwordHash = await bcrypt.hash(formData.password, 10);
 
-      const response = await fetch('http://localhost/api/customers', { // Update with your API endpoint
+      const response = await fetch('/api/customers', { // Update with your API endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

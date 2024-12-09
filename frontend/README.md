@@ -72,7 +72,7 @@ To start the development server, use:
 ```bash  
 npm start  
 ```  
-This will launch the application at `http://localhost:3000/`.  
+This will launch the application at `:3000/`.  
 
 ---
 

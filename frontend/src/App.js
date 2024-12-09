@@ -17,7 +17,7 @@ function App() {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost/api/products')
+    fetch('/api/products')
       .then(res => res.json())
       .then(data => setItems(data))
       .catch(error => console.error('Error fetching products:', error));
